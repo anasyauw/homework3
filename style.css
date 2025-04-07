@@ -1,0 +1,68 @@
+.header{
+  height: 56px;
+}
+
+.best-sellers{
+padding: 60px calc(50% - 532px) 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.best-sellers__title{
+  text-align: center;
+}
+
+.best-sellers__subtitle{
+  max-width: 632px;
+  text-align: center;
+
+  + .best-sellers__subtitle{
+    margin-top: 47px;
+  }
+}
+
+.best-sellers__title-h3{
+  margin-top: 87px;
+  text-align: center;
+}
+
+.best-sellers__list{
+  margin-top: 51px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px 60px;
+}
+
+.best-sellers__list-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 27px;
+}
+
+.best-sellers__list-item , .best-sellers__img{
+  width: 100%;
+}
+
+.best-sellers__text{
+  max-width: 156px;
+  text-align: center;
+}
+
+.best-sellers__price{
+  margin-top: 17px;
+}
+
+.best-sellers__btn{
+  background: transparent;
+  font:700 17px/1 "Arial",sans-serif;
+  margin-top: 10px;
+  border-bottom:2px solid black ;
+}
+
+.footer{
+  height: 291px;
+  background-color: black;
+}
+
