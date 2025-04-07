@@ -1,25 +1,42 @@
 /*общие стили*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:0;
+    outline: 0;
+}
 
 body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #1c1c1c;
     color: #fff;
 }
+
 a{
     color: #fff;
     text-decoration: none;
 }
+
 ul{
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-weight: 500;
-    margin: 0;
-}
 .container{
     max-width: 1142px;
     margin-left:auto;
@@ -30,12 +47,15 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     align-items: center;
     justify-content: center;
+
     font-weight: 500;
     font-size: 16px;
     width: 165px;
     height:50px ;
+
     border-radius: 5px;
     background-color: rgb(246, 126, 105);
+
     transition: opacity 0.3s ;
 }
 .menu__btn:hover{
@@ -46,11 +66,9 @@ h1,h2,h3,h4,h5,h6{
 /*шапка*/
 
 .header {
-    padding: 25px 0px;
-    position: relative;
-    z-index: 10;
-
+    padding: 25px 0;
 }
+
 .header .container{
     display: flex;
     justify-content: space-between;
@@ -58,69 +76,57 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-
 .menu__list {
     display: flex;
     gap:30px;
 }
+
 .menu a {
     font-size: 14px;
     opacity: 0.7;
     transition: opacity 0.3s;
 }
+
 .menu a.active {
     font-size: 14px;
     opacity: 1;
 }
+
 .menu a:hover{
     opacity: 0.9;
 }
 
-.main {
-
-}
-
 /*Приветственная секция*/
 .welcome{
-    box-sizing: border-box;
     min-height: 100vh;
-
     margin-top: -100px;
-    padding: 240px 0;
-
-    background-image: url("./img/welcome-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    padding: 166.83px 0 242px 0;
+    background:center/cover url("./img/welcome-bg.jpg") no-repeat;
 }
+
 .welcome__text {
     width: 550px;
 }
 
-
 .welcome__subtitle {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing:   0.1em;
+    font: 500 14px/1 Roboto, sans-serif;
+    letter-spacing:  0.1em;
     margin-bottom: 7px;
 }
 
 .welcome__title {
-    font-weight: 500;
-    font-size: 58px;
+    font: 500 58px/1 Roboto, sans-serif;
 }
 
 .welcome__desk {
-    margin: 40px 0;
+    max-width: 522px;
+    margin-top: 37px;
+    margin-bottom: 61.17px;
     font-size: 18px;
     opacity: 0.7;
 }
 
 /*Список еды*/
-
-.food-list {
-
-}
 
 .food-list .container{
     padding: 100px 10px;
@@ -153,3 +159,54 @@ h1,h2,h3,h4,h5,h6{
     font-size: 16px;
     opacity: 0.7;
 }
+
+/*fefw*/
+
+.king{
+    max-height: 543px;
+    background-color: #312F30;
+}
+
+.king .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.king__img {
+    height: 499px;
+}
+
+.king__text-wrapper{
+    margin-left: 158px;
+}
+
+.king__title{
+    font: 500 44.2px/1 Roboto, sans-serif;
+}
+
+.king__subtitle{
+    font: 400 16px/1 Roboto, sans-serif;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.king__price{
+    font-weight: 500;
+    color: #F6762C;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    &:last-child{
+        font-size: 16px;
+        text-decoration-line: line-through;
+        opacity: 0.5;
+    }
+}
+
+.king__price + .king__price {
+    margin-left: 3px;
+}
+
+
