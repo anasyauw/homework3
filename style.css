@@ -49,8 +49,7 @@ ul{
     align-items: center;
     justify-content: center;
 
-    font-weight: 500;
-    font-size: 16px;
+    font:500 16px/1 "Roboto",sans-serif;
     width: 165px;
     height:50px ;
 
@@ -81,17 +80,22 @@ ul{
 }
 
 .header__nav a {
-    font-size: 14px;
+    font:300 14px/1 'Roboto', sans-serif;
     opacity: 0.7;
-    transition: opacity 0.3s;
+    border: 2px solid transparent ;
+    transition: ease 0.3s;
+
+    &:hover {
+        opacity: 0.9;
+        border-bottom-color: #1c1c1c;
+        background: #bf7538;
+        border-radius: 30%;
+        font-size: 16px;
+    }
 }
 
 .header__nav a.active {
     opacity: 1;
-}
-
-.header__nav a:hover {
-    opacity: 0.9;
 }
 
 /*- Приветственная секция */
@@ -109,20 +113,19 @@ ul{
 }
 
 .welcome__subtitle {
+    font:500 14px/1 Roboto, sans-serif;
     margin-bottom: 7px;
-
-    font-size: 14px;
 }
 
 .welcome__title {
-    font-size: 58px;
+    font:500 58px/1 Roboto, sans-serif;
 }
 
 .welcome__desc {
+    font:400 18px/1 Roboto, sans-serif;
     max-width: 475px;
     margin-top: 37px;
     margin-bottom: 62px;
-    font-size: 18px;
     opacity: 0.7;
 }
 /*Список еды*/
@@ -150,12 +153,12 @@ ul{
 }
 
 .food-title {
-    font-size:20px ;
+    font:500 20px/1 Roboto, sans-serif;
     margin-bottom: 13px;
 }
 
 .food-desc {
-    font-size: 16px;
+    font:400 16px/1 Roboto, sans-serif;
     opacity: 0.7;
 }
 
@@ -270,14 +273,21 @@ ul{
     align-items: center;
     justify-content: center;
 
-    font-weight: 500;
-    font-size: 12px;
+    font:500 12px/1 Roboto, sans-serif;
+
     width: 141px;
     height:39px ;
 
     border-radius: 5px;
     background-color: rgb(246, 126, 105);
     margin-top:11px;
+    transition:step-start  0.3s ;
+
+    &:hover{
+        background-color: #f40a0a;
+        width: 160px;
+        height: 48px;
+    }
 }
 
 /*feedback*/
